@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient( rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(http://blogs.reuters.com/anya-schiffrin/files/2011/09/india.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    ;
+}
+
+#jumbotronBG {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#addTrainBtn {
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+#addTrainBtn:hover {
+    background-color:blue;
+}
+
+.header-text {
+    color: black;
+    font-family: 'Arapey', serif;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #DCDCDC;
+    color: #41444E;
+}
+
+.panel {
+    border: 0;
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td {
+    border: 0;
+}
+
+.panel-primary:hover  #addTrainBtn {
+    background-color: red;
+}

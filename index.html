@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Time</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Jumbotron -->
+        <div class="jumbotron" id="jumbotronBG">
+            <h1 class="text-center header-text">Train Schedule</h1>
+            <h3 class="text-center header-text">A highly complex database of user input train times.</h3>
+            <h3 class="text-center header-text">Highly. Complex.</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Populated table of train data -->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-hover" id="trainTable">
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency(min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Add train -->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Add Train</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <!-- Enry Form -->
+                        <form>
+                            <div class="form-group">
+                                <label for="trainName">Train Name</label>
+                                <input type="text" class="form-control" id="trainNameInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="destination">Destination</label>
+                                <input type="text" class="form-control" id="destinationInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstTrain">First Train Time (HH:mm - military time)</label>
+                                <input type="text" class="form-control" id="firstTrainTime">
+                            </div>
+                            <div class="form-group">
+                                <label for="frequency">Frequency (min)</label>
+                                <input type="text" class="form-control" id="frequencyInput">
+                            </div>
+                            <button type="submit" class="btn" id="addTrainBtn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Latest compiled and minified jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- Firebase Reference -->
+        <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+        <!-- Moment.js Reference -->
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</body>
+
+</html>
